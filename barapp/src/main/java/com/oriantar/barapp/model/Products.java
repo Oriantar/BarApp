@@ -5,11 +5,7 @@ package com.oriantar.barapp.model;
  * @author Tim Maurizio
  */
 import java.io.Serializable;
-
-import jakarta.annotation.Generated;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Products implements Serializable{
@@ -24,5 +20,5 @@ public class Products implements Serializable{
     private String imageUrl;
     private int categoryId;
 
-    
+
 }
