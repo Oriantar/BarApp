@@ -1,1 +1,4 @@
 #GITIGNORES :D
+
+# Ignore my prettier ignores :D
+.prettierignore

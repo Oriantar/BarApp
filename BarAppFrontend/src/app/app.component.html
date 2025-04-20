@@ -1,9 +1,15 @@
-<div *ngFor="let product of products">
-  <div>
-    {{ product.name }}
-    {{ product.price }}
+<div
+  *ngFor="let product of products"
+  class="grid gap-4 p-4 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+>
+  <div
+    class="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+  >
+    <div>{{ product.name }}</div>
+
+    <div class="flex items-center">
+      <p>Prijs: </p>
+      <p>{{ product.price }}</p>
+    </div>
   </div>
-</div>
-<div>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
 </div>
