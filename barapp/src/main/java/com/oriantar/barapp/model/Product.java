@@ -9,21 +9,21 @@ import jakarta.persistence.*;
 import jakarta.persistence.Column;
 
 @Entity
-public class Products implements Serializable{
+public class Product implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true, updatable = false)
     private Long id;
     private String name;
     private String description;
-    private int price;
+    private float price;
     private int quantity;
     private String imageUrl;
     private int categoryId;
 
-    public Products() {}
+    public Product() {}
 
-    public Products(Long id, String name, String description, int price, int quantity, String imageUrl, int categoryId) {
+    public Product(Long id, String name, String description, float price, int quantity, String imageUrl, int categoryId) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -45,7 +45,7 @@ public class Products implements Serializable{
         return description;
     }
 
-    public int getPrice() {
+    public float getPrice() {
         return price;
     }
 
@@ -77,7 +77,7 @@ public class Products implements Serializable{
         this.quantity = quantity;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 
@@ -91,7 +91,7 @@ public class Products implements Serializable{
 
     @Override
     public String toString() {
-        return "Products{id=" + id +
+        return "Product{id=" + id +
                 ", name=" + name +
                 ", description=" + description +
                 ", price=" + price +
