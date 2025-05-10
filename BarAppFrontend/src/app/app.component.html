@@ -1,21 +1,2 @@
+<router-outlet />
 
-<div class="grid lg:grid-cols-5 md:grid-cols-2 justify-items-center pt-5 pl-5">
-  <div *ngFor="let product of products" >
-    
-    <div class="flex w-72 flex-col items-center gap-5 bg-gray-900 p-4 text-gray-200 md:mb-5">
-      <div class="p0 h-14 w-full justify-items-center-safe  border-b-2">
-        <p>{{ product.name }}</p>
-        <p> {{ product.price }}€</p>
-        </div>
-      <div>
-        <img class=" w-72 h-72" [src]="product.imageUrl" alt="image of {{product.name}}"> 
-      </div>
-      <div class="flex justify-items-center">
-        <a href=""><div class="bg-white rounded-2xl justify-items-center text-black w-11 text-2xl">
-          <p>+</p>
-        </div></a>
-      </div>
-    </div>
-
-  </div>
-</div>
